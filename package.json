@@ -1,0 +1,24 @@
+{
+  "name": "dialogflowresearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sachinists/DialogFlowResearch.git"
+  },
+  "author": "debjyoti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sachinists/DialogFlowResearch/issues"
+  },
+  "homepage": "https://github.com/Sachinists/DialogFlowResearch#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4"
+  }
+}
