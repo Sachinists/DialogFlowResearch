@@ -5,16 +5,20 @@ const
     bodyParser = require('body-parser'),
     http = require('http'),
     app = express();
+
 require('dotenv').config()
+
 var response = require('./response');
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
 app.post('/webhook', (req, res) => {
     console.log("IN WEBHOOK POST");
     let body = req.body;
     console.log(JSON.stringify(body));
     res.setHeader('Content-Type','application/json');
-    r = new response("My name is Debjyoti Pandit","My name is Debjyoti Pandit","My name is Debjyoti Pandit");
+    var r = new response("My name is Debjyoti Pandit","My name is Debjyoti Pandit","My name is Debjyoti Pandit");
     res.status(200).send(JSON.stringify(r));
 });
 
