@@ -18,7 +18,8 @@ app.post('/webhook', (req, res) => {
     let body = req.body;
     console.log(JSON.stringify(body));
     res.setHeader('Content-Type','application/json');
-    var r = new response("My name is Debjyoti Pandit","My name is Debjyoti Pandit","My name is Debjyoti Pandit");
+    var r = new response("My name is Debjyoti Pandit","My name is Debjyoti Pandit","GunDescriptions");
+    console.log(JSON.stringify(r));
     res.status(200).send(JSON.stringify(r));
 });
 
