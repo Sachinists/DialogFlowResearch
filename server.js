@@ -18,9 +18,21 @@ app.post('/webhook', (req, res) => {
     let body = req.body;
     console.log(JSON.stringify(body));
     res.setHeader('Content-Type','application/json');
-    var r = new response("My name is Debjyoti Pandit","My name is Debjyoti Pandit","GunDescriptions");
-    console.log(JSON.stringify(r));
-    res.status(200).send(JSON.stringify(r));
+    var a = " "
+    var resObj = {
+        "fulfillmentText": "It is a assault riffle.",
+		"fulfillmentMessages": [
+			{
+				"text": {
+					"text": [
+						"My name is Debjyoti Pandit"
+					]
+				}
+			}
+		]
+    }
+    return res.json(resObj);
+    // res.status(200).send(JSON.stringify(r));
 });
 
 app.get('/webhook', (req, res) => {
